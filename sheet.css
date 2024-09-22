@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+.main{
+    background-color: rgb(231, 240, 237);
+    
+}
+.contain h1{
+    text-align: center;
+    
+        font-family: 'Arial', sans-serif;
+        font-size: 2.5em;
+        color: #333;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        background-color: #f8f9fa;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+        letter-spacing: 1px;
+        line-height: 1.2;
+        font-weight: bold;
+    }
+    
+.contain h1:hover {
+        color: rgb(26, 101, 167);
+        cursor: pointer;
+        border-bottom: 2px solid #007bff;
+    }
+    
+.contain h3{
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+}
+.location-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 853px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    width: 50rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+.container {
+    display: flex;
+   /* flex-wrap: wrap;*/
+    justify-content: center; /* Space between items */
+}
+
+.box {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 30px;
+    align-items: center;
+    text-align: center;
+    margin: 40px;
+    width: calc(50% - 20px); /* Two boxes per row */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition for hover effect */
+}
+
+.box:hover {
+    transform: translateY(-5px); /* Move the box up on hover */
+    background-color: rgb(26, 101, 167);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.logo {
+    width: 80px; /* Adjust logo size as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Optional: Add responsiveness */
+@media (max-width: 600px) {
+    .box {
+        width: calc(100% - 20px); /* One box per row on smaller screens */
+    }
+}
+

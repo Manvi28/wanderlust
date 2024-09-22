@@ -1,0 +1,82 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container for the entire chat */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+  background-color: #030303;
+  border: 1px solid #010101;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Chat message area */
+.chat-box {
+  flex-grow: 1;
+  padding: 10px;
+  overflow-y: auto;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Message styling */
+.message {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.user-message {
+  justify-content: flex-end;
+}
+
+.bot-message {
+  justify-content: flex-start;
+}
+
+.message p {
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 60%;
+}
+
+.bot-message p {
+  background-color: #e74c3c;
+}
+
+/* Input area styling */
+.input-box {
+  display: flex;
+  padding: 10px;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.input-box input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.input-box button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.input-box button:hover {
+  background-color: #2980b9;
+}

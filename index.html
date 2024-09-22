@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wanderlust</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+  <header>
+    <div class="content flex_space">
+      <div class="logo">
+        <img src="wanderlust_logo.png" alt="">
+      </div>
+      <div class="navlinks">
+        <ul id="menulist">
+          <li><a href="#home">HOME</a> </li>
+          <li><a href="#about">ABOUT</a> </li>
+          <li><a href="collab.html">COLLABORATE</a> </li>
+          <li><a href="travel.html">TRAV BUDDY</a> </li>
+          <li><a href="#contact">CONTACT</a> </li>
+          <li> <i class="fa fa-search"></i> </li>
+          <li> <button class="primary-btn"><select id="dropdown">
+                <option value="option1">LOGIN/REGISTER</option>
+                <option value="option2">Login as user</option>
+                <option value="option3">Login as admin</option>
+              </select></button>
+          </li>
+        </ul>
+        <span class="fa fa-bars" onclick="menutoggle()"></span>
+      </div>
+    </div>
+  </header>
+
+
+  <script>
+    var menulist = document.getElementById('menulist');
+    menulist.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (menulist.style.maxHeight == "0px") {
+        menulist.style.maxHeight = "100vh";
+      } else {
+        menulist.style.maxHeight = "0px";
+      }
+    }
+  </script>
+
+
+  <section class="home">
+    <div class="content">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img src="banner1.jpg" alt="">
+          <div class="text">
+            <h1>Experiences That Last</h1>
+            <p> <a href="b">Tour packages</a> || <a href="c">Exclusive OfferS</a> || <a href="d">Cuisines</a> ||<a
+                href="c">Our Achievements</a>
+            </p>
+            <div class="flex">
+              <button class="primary-btn"><a href="explore.html">EXPLORE</a></button>
+              <button class="secondary-btn"><a href="bot.html">ASK ANYTHING</a></button>
+            </div>
+
+          </div>
+        </div>
+        <div class="item">
+          <img src="banner2.jpg" alt="">
+          <div class="text">
+            <h1>Experiences That Last</h1>
+            <p> <a href="b">Tour packages</a> || <a href="c">Exclusive Offer</a> || <a href="d">Cuisines</a> || <a>Our
+                Achievements</a>
+            </p>
+            <div class="flex">
+              <button class="primary-btn"><a href="explore.html">EXPLORE</a></button>
+              <button class="secondary-btn">GIVE FEEDBACKS</button>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="banner-1.png" alt="">
+          <div class="text">
+            <h1>Experiences That Last</h1>
+            <p> <a href="b">Tour packages</a> || <a href="c">Exclusive Offer</a> || <a href="d">Cuisines</a> || <a>Our
+                Achievements</a>
+            </p>
+            <div class="flex">
+              <button class="primary-btn"><a href="explore.html">EXPLORE</a></button>
+              <button class="secondary-btn">CONTACT US</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+    integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      dots: false,
+      navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+
+
+
+  <section class="book">
+    <div class="container flex_space">
+    <div>
+      <div class="text">
+        <h1> <span>YOU DESIRE </span><br>WE FULFILL</h1>
+      </div>
+      <div class="text travel-form-heading">
+        <h2>Customize your Travel Plan with Us!</h2>
+      </div>
+      <div>
+        <form id="Enter your desires">
+          <div class="hey">
+            <span class="form-title">NUMBER OF DAYS</span>
+            
+            <input type="number" placeholder="days" class="travel-form-input" min="0" required >
+            <span>NIGHTS</span>
+            <input type="number" placeholder="nights" class="travel-form-input" />
+          </div>
+          <div class="travel-dropdown">
+            <span>DESTINATION/S</span>
+            <select name="places" id="places" title="places" class="dropdown">
+              <option value="a">VENICE</option>
+              <option value="b">MALAYSIA</option>
+              <option value="c">BALI</option>
+              <option value="d">LADAKH</option>
+            </select>
+          </div>
+          <div class="travel-dropdown">
+            <span>ACTIVITIES YOU DESIRE</span>
+            <select name="features" id="features" title="features" class="dropdown">
+              <option value="a">TRY REGINONAL CUISINES</option>
+              <option value="b">ENJOY A SPA SESSION</option>
+              <option value="c">STAR GAZING AT NIGHT</option>
+              <option value="d">ATTEND YOGA SESSIONS</option>
+              <option value="e">PERFORM ADVENTURE SPORTS</option>
+            </select>
+          </div>
+          <div class="form-inputs">
+            <div class="form-title">ESTIMATED PRICE:</div>
+            <div class="form-input"><input type="text" placeholder="--" class="travel-form-input" disabled /></div>
+          </div>
+          <div class="form-inputs">
+            POTENTIAL RISKS:
+            <div>
+              <input type="text" placeholder="--" class="travel-form-input" />
+            </div>
+
+          </div>
+        </form>
+        <div id="google_translate_element"></div>
+        <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslator"></script>
+        <script>
+          function loadGoogleTranslator() {
+            new google.translate.TranslateElement("google_translate_element");
+          }
+        </script>
+
+
+      </div>
+    </div>
+
+    <div class="slideshow">
+      <div class="slides">
+        <div class="slide">
+          <img src="bungee.jpg" alt="Image 1">
+          <div class="title">Experience bunjee jumping in Rishikesh</div>
+        </div>
+        <div class="slide">
+          <img src="food.jpg" alt="Image 2">
+          <div class="title">Try some North Eastern food</div>
+        </div>
+        <div class="slide">
+          <img src="safari.jpg" alt="Image 3">
+          <div class="title">Experience Jungle Safari </div>
+        </div>
+      </div>
+      <button class="prev">PREV</button>
+      <button class="next">NEXT</button>
+    </div>
+  </section>
+
+  <script>
+    const slideshow = document.querySelector('.slideshow');
+    const slides = document.querySelectorAll('.slides img');
+    const titles = document.querySelectorAll('.title');
+    const prevButton = document.querySelector('.prev');
+    const nextButton = document.querySelector('.next');
+
+    let currentSlide = 0;
+
+    prevButton.addEventListener('click', () => {
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      showSlide();
+    });
+
+    nextButton.addEventListener('click', () => {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide();
+    });
+
+    function showSlide() {
+      slides.forEach((slide, index) => {
+        slide.style.display = index === currentSlide ? 'block' : 'none';
+      });
+      titles.forEach((title, index) => {
+        title.style.display = index === currentSlide ? 'block' : 'none';
+      });
+    }
+
+    showSlide();
+
+    const slideshowInterval = () => {
+      setInterval(() => {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide();
+      }, 1000);
+    }
+
+    slideshowInterval();
+
+
+  </script>
+
+  <section class="about top">
+    <div class="container flex">
+      <div class="left">
+        <div class="heading">
+          <h1>ABOUT</h1>
+          <h2>WANDERLUST</h2>
+        </div>
+        <p>Our Website is one of its kind, aiming to serve people by helping them to explore various destinations and at
+          the same time acting as a guide to ensure that its users feel safe and secure. We try try to provide a
+          safisfactory travel experience to everyone.</p>
+        <button class="primary-btn">KNOW US MORE</button>
+      </div>
+      <div class="right">
+        <img src="about.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="counter top">
+    <div class="container grid">
+      <div class="box">
+        <h1>10,000+</h1>
+        <hr>
+        <span>DESTINATIONS</span>
+      </div>
+      <div class="box">
+        <h1>500+</h1>
+        <hr>
+        <span>ACTIVITIES</span>
+      </div>
+      <div class="box">
+        <h1>900+</h1>
+        <hr>
+        <span>HIDDEN GEMS</span>
+      </div>
+      <div class="box">
+        <h1>2000+</h1>
+        <hr>
+        <span>TOUR PACKAGES TO CHOOSE FROM</span>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="rooms">
+    <div class="container top">
+      <div class="heading">
+        <h1>HOTELS</h1>
+        <h2>ROOMS/SUITES</h2>
+        <p>Have a Look at the Delux, Premium, Regular, Econmial rooms and suites. Get to choose your perfect stay.</p>
+      </div>
+
+      <div class="content mtop">
+        <div class="owl">
+          <div class="items">
+            <div class="image">
+              <img src="room-7.png" alt="">
+            </div>
+            <div class="text">
+              <h2>HOTEL TAJ</h2>
+              <h3>Mumbai,Maharasthra</h3>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <div class="button room-buttons-grid">
+                <div class="flex room-book-button">
+                  <button class="room-button">BOOK NOW</button>
+                  <h3>28000/-<span> <br> Per Night </span> </h3>
+                </div>
+                <div class="dropdown">
+                  <button class="dropbtn">Additional Info</button>
+                  <div class="dropdown-content">
+                    <button class="medical-facilities">Landmark</button>
+                    <button class="police-station">Local Helpline</button>
+                    <button class="Video Clips">Video Clips</button>
+                    <button class="tip">Tips</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="room-1.png" alt="">
+            </div>
+            <div class="text">
+              <h2>HOTEL SWARNAPURI</h2>
+              <h3>Puri,Odisha</h3>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <div class="button room-buttons-grid">
+                <div class="flex room-book-button">
+                  <button class="room-button">BOOK NOW</button>
+                  <h3>13000/-<span> <br> Per Night </span> </h3>
+                </div>
+                <div class="dropdown">
+                  <button class="dropbtn">Additional Info</button>
+                  <div class="dropdown-content">
+                    <button class="medical-facilities">Landmark</button>
+                    <button class="police-station">Local Helpline</button>
+                    <button class="Video Clips">Video Clips</button>
+                    <button class="tip">Tips</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="room-8.png" alt="">
+            </div>
+            <div class="text">
+              <h2>HOTEL ARPAN</h2>
+              <h3>Kolkata,West Bengal</h3>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <div class="button room-buttons-grid">
+                <div class="flex room-book-button">
+                  <button class="room-button">BOOK NOW</button>
+                  <h3>3000/-<span> <br> Per Night </span> </h3>
+                </div>
+                <div class="dropdown">
+                  <button class="dropbtn">Additional Info</button>
+                  <div class="dropdown-content">
+                    <button class="medical-facilities">Landmark</button>
+                    <button class="police-station">Local Helpline</button>
+                    <button class="Video Clips">Video Clips</button>
+                    <button class="tip">Tips</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="room-2.png" alt="">
+            </div>
+            <div class="text">
+              <h2>LAS PULMA LOUNGE</h2>
+              <h3>Miami,USA</h3>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <div class="button room-buttons-grid">
+                <div class="flex room-book-button">
+                  <button class="room-button">BOOK NOW</button>
+                  <h3>15000/-<span> <br> Per Night </span> </h3>
+                </div>
+                <div class="dropdown">
+                  <button class="dropbtn">Additional Info</button>
+                  <div class="dropdown-content">
+                    <button class="medical-facilities">Landmark</button>
+                    <button class="police-station">Local Helpline</button>
+                    <button class="video-clips">Video Clips</button>
+                    <button class="tip">Tips</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="room-3.png" alt="">
+            </div>
+            <div class="text">
+              <h2>Hotel Victoria</h2>
+              <h3>Paris,France</h3>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <div class="button room-buttons-grid">
+                <div class="flex room-book-button">
+                  <button class="room-button">BOOK NOW</button>
+                  <h3>20000/- <span> <br> Per Night </span> </h3>
+                </div>
+                <div class="dropdown">
+                  <button class="dropbtn">Additional Info</button>
+                  <div class="dropdown-content">
+                    <button class="medical-facilities">Landmark</button>
+                    <button class="police-station">Local Helpline</button>
+                    <button class="video clips">Video Clips</button>
+                    <button class="tip">Tips</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="room-4.png" alt="">
+            </div>
+            <div class="text">
+              <h2>Hotel Seema</h2>
+              <h3>Darjeeling,India</h3>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <div class="button room-buttons-grid">
+                <div class="flex room-book-button">
+                  <button class="room-button">BOOK NOW</button>
+                  <h3>3000/- <span> <br> Per Night </span> </h3>
+                </div>
+                <div class="dropdown">
+                  <button class="dropbtn">Additional Info</button>
+                  <div class="dropdown-content">
+                    <button class="medical-facilities">Landmark</button>
+                    <button class="police-station">Local Helpline</button>
+                    <button class="video clips">Video Clips</button>
+                    <button class="tip">Tips</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+        <div class="services top">
+          <div class="container">
+            <div class="headingg">
+              <h1>SERVICES</h1>
+              <h2>Our Services</h2>
+              <p>Exclusive services setting your hotel apart.
+
+            </div>
+
+
+            <div class="content flex_space">
+              <div class="left grid2">
+                <div class="box">
+                  <div class="text">
+                    <i class="fa-solid fa-check-to-slot"></i>
+                    <h3>Hotel Booking</h3>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="text">
+                    <i class="fa-solid fa-gears"></i>
+                    <h3>Customize Plan</h3>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="text">
+                    <i class="fa-solid fa-plane-circle-check"></i>
+                    <h3>Travel Insurance</h3>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="text">
+                    <i class="fa-solid fa-user"></i>
+                    <h3>Customer Support</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="right">
+                <img src="istockphoto-1164197127-612x612.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+  </section>
+  <script>
+    $('.owl-carousel1').owlCarousel({
+      loop: true,
+      margin: 40,
+      nav: true,
+      dots: false,
+      navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 2,
+          margin: 14,
+        },
+        1000: {
+          items: 3
+        }
+      }
+    })
+  </script>
+
+  <section class="gallery">
+    <div class="container top">
+      <div class="heading">
+        <h1>EXHIBITION</h1>
+        <h2>IMAGES</h2>
+        <p>Our exquisite collection will surely boost your Urge to visit them.
+      </div>
+    </div>
+
+    <div class="content mtop">
+      <div class="owl-carousel owl-carousel1 owl-theme">
+        <div class="items">
+          <div class="img">
+            <img src="gallery-1.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>HELLO</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="gallery-2.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Photo Title Here.</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="gallery-3.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Photo Title Here.</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="gallery-4.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Photo Title Here.</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="gallery-5.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Photo Title Here.</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="gallery-6.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Photo Title Here.</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="gallery-4.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Photo Title Here.</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="gallery-3.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Photo Title Here.</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="gallery-1.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Photo Title Here.</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="gallery-6.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Photo Title Here.</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+    $('.owl-carousel1').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      dots: false,
+      autoplay: true,
+      autoplayTimeout: 1000,
+      autoplayHoverPause: true,
+      navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 4,
+        },
+        1000: {
+          items: 6
+        }
+      }
+    })
+  </script>
+
+  <script>
+    $('.owl-carousel2').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: false,
+      dots: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1,
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+  <section class="volunteer">
+    <div class="container">
+      <div class="locate">
+        <h1>LOCATE</h1>
+        <h2>Volunteer</h2>
+      </div>
+      <div class="head">
+        <h1>An initative by WANDERLUST<p>Help us in cleaning Tourist sites and receive interesting vouchers</p>
+        </h1>
+      </div>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.405163033808!2d88.51809377481116!3d22.56394493328841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a020b8f2325aa81%3A0xfefa177dac344f36!2sISKCON%20Newtown%2C%20Kolkata!5e0!3m2!1sen!2sin!4v1725166552345!5m2!1sen!2sin"
+          width="450" height="450" style="border:2px;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <img src="20150223cleaning-bagmati-river.jpg" alt="cleaning">
+      </div>
+      <div class="input"><input type="text" placeholder="Enter your location">
+      </div>
+      <h4> Or <br>Locate it on map</h4>
+      <div class="contribute">
+        <div class="meter">
+          <h4>Contributo meter</h4>
+          <div class="meterbox">
+            <div class="contributor-meter">
+              <div class="contributor"><progress value="40" max="100" id="progress"></progress></div>
+
+            </div>
+
+
+          </div>
+
+        </div>
+        <div class="rating">
+          <p>Given on the bais of amount of garbage cleaned</p>
+          <div class="star">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+          </div>
+        </div>
+        <div class="rewards">
+          <h3 class="unlock">Unlock your rewards</h3>
+          <div class="row">
+            <div class="boxe">
+              <p>Extra 5% OFF on Hotels after cleaning 5kg garbage </p><button class="claim">Claim now</button>
+            </div>
+            <div class="boxe">
+              <p>Extra 10% on India tours after cleaning 10kg garbage</p><button class="claim">Claim now</button>
+            </div>
+            <div class="boxe lock"><i class="fa fa-lock"></i></div>
+
+            <div class="boxe lock"><i class="fa fa-lock"></i></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container grid-cols">
+      <div class="footer-box">
+        <img src="wanderlust_logo.png" alt="">
+
+        <div class="icon">
+          <i class="fa fa-facebook-f"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-youtube"></i>
+        </div>
+      </div>
+
+      <div class="box">
+        <h2>Contact Us</h2>
+        <p>Free Free to connect with us.
+        </p>
+        <i class="fa fa-location-dot"></i>
+        <label>Techno Main, Salt Lake, Kolkata. </label> <br>
+        <i class="fa fa-phone"></i>
+        <label> 90XXXXXXX </label> <br>
+        <i class="fa fa-envelope"></i>
+        <label>info@wanderlust.com </label> <br>
+      </div>
+    </div>
+  </footer>
+
+  <div class="legal">
+    <p class="container">Copyright (c) 2024 Copyright Holder All Rights Reserved.</p>
+  </div>
+
+
+
+  <script src="https://kit.fontawesome.com/032d11eac3.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
